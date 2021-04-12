@@ -130,12 +130,12 @@ def song_off():
 var = IntVar()
 var.set(0)
 
-check_on = Radiobutton(text='ON', value=0, command=song_on, variable=var, bg='#78c6cf',
-                       activebackground='#78c6cf', font='ProductSans 10')
+check_on = Radiobutton(text='🔊', value=0, command=song_on, variable=var, bg='#78c6cf',
+                        activebackground='#78c6cf', font='ProductSans 15')
 check_on.place(x=5, y=570)
 
-check_off = Radiobutton(text='OFF', value=1, command=song_off, variable=var, bg='#78c6cf',
-                        activebackground='#78c6cf', font='ProductSans 10')
+check_off = Radiobutton(text='🔈', value=1, command=song_off, variable=var, bg='#78c6cf',
+                        activebackground='#78c6cf', font='ProductSans 15')
 check_off.place(x=55, y=570)
 
 
@@ -143,7 +143,7 @@ check_off.place(x=55, y=570)
 # но в таком случае не отображаются картинки, пытался найти решение, но не смог
 
 image = ImageTk.PhotoImage(img)
-btn = Button(root, image=image, text='a^n', compound='center', command=add_pow,
+btn = Button(root, image=image, text='a^2', compound='center', command=add_pow,
              fg='White', activeforeground='#78c6cf', font='ProductSans 19',
              height=48, width=48, borderwidth=0)
 btn.place(x=80, y=120)
